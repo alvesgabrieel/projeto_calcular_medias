@@ -46,7 +46,7 @@ function atualizarTabela(){
 function atualizarMediaFinal(){
     const media = calculoMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = media;
+    document.getElementById('media-final-valor').innerHTML = media.toFixed(2);
     document.getElementById('media-final-resultado').innerHTML = media >= mediaMinima ? ResultadoFinalAprovado : RresultadoFinalReprovado;  
 }
 
